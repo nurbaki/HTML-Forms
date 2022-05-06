@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formlar</title>
+  </head>
+  <body>
+    <h1>Formlar</h1>
+    <form action="2-results.html" method="get">
+    <div>
+      <label for="isim">Vorname</label><br />
+      <input type="text" id="isim" name="Ad1" value="" placeholder="Lütfen isim giriniz" required/><br>
+
+      <label for="soyad">Name</label><br />
+      <input type="text" id="soyad" name="soyAd1" value="" placeholder="Lütfen Soyisim giriniz"/><br>
+    </div>
+    <div>
+<label for="şifre">Parola</label><br>
+<input type="password" id="şifre" name="password" value="" minlength="4" 
+maxlength="8" placeholder="Lütfen parola giriniz" required> <br> <br>
+<div>
+<label> Cinsiyet </label> <br><br>
+
+<label for="erkek">Erkek</label>
+ <input type="radio" id="erkek" name="cinsiyet" value="">
+
+<label for="kadın">Kadın</label>
+<input type="radio" id="kadın" name="cinsiyet" value="">
+
+<label for="none">None</label>
+<input type="radio" id="none" name="cinsiyet" value=""><br><br><br>
+</div>
+
+<div>
+    <label for="">FAVORİ ARABANIZI SEÇİNİZ</label><br><br>
+
+    <label for="bmw">BMW</label>
+    <input type="checkbox" id="bmw" name="araba1" value="bmw">
+
+    <label for="merso">Mercedes</label>
+    <input type="checkbox" id="merso" name="araba2" value="merso">
+
+    <label for="audi">Audi</label>
+    <input type="checkbox" id="audi" name="araba3" value="audi"><br><br>
+</div>
+
+<div>
+    <label for="yas">YAŞ</label><br>
+    <input type="number" id="yas" name="yaş" value="0" max="100" step="2"><br><br>
+
+<label for="renk">Renk:</label>
+<input type="color" id="renk" name="renk" ><br><br>
+
+<label for="tarih">Tarih:</label><br>
+<input type="date" id="tarih" name="tarih" value="" min="2000-01-01" max="2023-01-01"><br><br>
+</div>
+<div>
+    <label for="email">Email:</label><br>
+    <input type="mail" id="email" name="email" placeholder="ex@ex.com"><br><br>
+
+    <label for="tel">Telefon:</label><br>
+    <input type="tel" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" 
+    placeholder="555-5555-5555"><br><br><br>
+</div>
+<div>
+    <label for="tatlı">Hangi Tatlıyı Seversiniz?</label>
+    <select name="tatlı" id="tatlı">
+        <option value="künefe"> Künefe</option>
+        <option value="baklava"> Baklava </option>
+        <option value="seker"> Tulumba</option>
+        <option value="sutlac"> Sütlaç</option>
+    </select>
+</div>
+<div>
+    <label for="yorum">Yorumlarınızı Giriniz:</label>
+    <br />
+    <textarea
+      name="yorum"
+      id="yorum"
+      cols="10"
+      rows="10"
+      style="resize: none"
+      
+      maxlength="100"
+      placeholder="En fazla 100 karakter girilebilir"
+    ></textarea>
+    <!-- style="resize:                              none : Yeniden boyutlandırılabilir özelliğini devre dışı bırakmak için kullanılır.
+both : Yatayda ve dikeyde yeniden boyutlandırılabilir yapmak için kullanılır. asılarak büyütülebilir
+horizontal : Yatayda yeniden boyutlandırılabilir yapmak için kullanılır.
+vertical : Dikeyde yeniden boyutlandırılabilir yapmak için kullanılır. -->
+  </div> <br/>
+
+<input type="submit">
+<input type="submit">
+<input type="submit">
+
+
+</form>
+  </body>
+</html>
